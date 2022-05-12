@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
-    padding: 10px;
+    padding: 20px;
    
     background: rgb(0, 0, 0);
     list-style: none;
@@ -20,6 +20,7 @@
 .test{
     color: white;
     text-decoration: none;  
+    font-size: 20px;
 }
 
 .name{
@@ -28,6 +29,8 @@
     height: 100vh;
     padding: 20%;
     box-sizing:border-box;
+
+    
 }
 
 .name h1 {
@@ -38,6 +41,35 @@
      font-size: 20px;
    
 }
+
+.e{
+    opacity: 0%;
+    margin-right: -40px;
+}
+
+.ex{
+    opacity: 0%;
+    font-size: 15px;
+    color: rgb(255, 69, 69);
+}
+
+.container:hover .ex{
+    opacity: 100%;
+    transition: all 1.2s;
+ }
+
+.container:hover .e {
+    opacity: 100%;
+    color: black;
+    transition: all 1.2s;
+}
+
+.container:hover .o {
+    opacity: 0%;
+    color: black;
+    transition: all 1.2s;
+}
+
 
 .prettyPicture{
     height: 100vh;
@@ -58,9 +90,10 @@
     width: 100%;
 }
 
-.git{
-    
+.navBar li a:hover{
+    color: rgb(255, 69, 69);
 }
+
 
 .git:hover
 {
