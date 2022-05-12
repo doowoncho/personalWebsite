@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@244&display=swap');
+
+*{
+    margin: 0px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 1000;
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px;
+   
+    background: rgb(0, 0, 0);
+    list-style: none;
+    position: fixed;
+}
+
+.test{
+    color: white;
+    text-decoration: none;  
+}
+
+.name{
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    padding: 20%;
+    box-sizing:border-box;
+}
+
+.name h1 {
+    font-size: 80px;
+}
+
+.name p{
+     font-size: 20px;
+   
+}
+
+.prettyPicture{
+    height: 100vh;
+    background: url("./pexels-anna-tarazevich-6900713.jpg") center/cover no-repeat fixed;
+    background-size: cover;
+
+    justify-content: center;
+    text-align: center;
+    padding: 20%;
+    box-sizing: border-box;
+    color: white;
+    font-size: 20px;
+}
+
+.res object{
+    padding-top: 2%;
+    height: 96vh;
+    width: 100%;
+}
+
+.git{
+    
+}
+
+.git:hover
+{
+    /* filter: drop-shadow(7px 3px 2px #555454);    */
+    transform: rotateZ(360deg);
+    transition: all 0.5s;
+}
