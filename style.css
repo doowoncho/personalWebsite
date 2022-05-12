@@ -41,7 +41,7 @@
 
 .prettyPicture{
     height: 100vh;
-    background: url("./pexels-anna-tarazevich-6900713.jpg") center/cover no-repeat fixed;
+    background: url("images/pexels-anna-tarazevich-6900713.jpg") center/cover no-repeat fixed;
     background-size: cover;
 
     justify-content: center;
