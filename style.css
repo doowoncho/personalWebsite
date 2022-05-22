@@ -4,23 +4,25 @@
     margin: 0px;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 1000;
+   
 }
 
 .navBar{
     display: flex;
     justify-content: space-around;
     width: 100%;
-    padding: 20px;
+    padding: 10px;
    
-    background: rgb(0, 0, 0);
+    background: c6d4ff;
     list-style: none;
     position: fixed;
 }
 
 .test{
-    color: white;
+    color: #363636;
     text-decoration: none;  
-    font-size: 20px;
+    font-size: 18px;
+
 }
 
 .name{
@@ -29,28 +31,32 @@
     height: 100vh;
     padding: 20%;
     box-sizing:border-box;
-
+    background-size: cover;
     
 }
 
 .name h1 {
     font-size: 80px;
+    color: black
 }
 
 .name p{
      font-size: 20px;
+     color: black
    
 }
 
 .e{
     opacity: 0%;
     margin-right: -40px;
+    transition: all .5s;
 }
 
 .ex{
     opacity: 0%;
     font-size: 15px;
     color: rgb(255, 69, 69);
+    transition: all .5s;
 }
 
 .container:hover .ex{
@@ -70,34 +76,66 @@
     transition: all 1.2s;
 }
 
-
-.prettyPicture{
-    height: 100vh;
-    background: url("images/pexels-anna-tarazevich-6900713.jpg") center/cover no-repeat fixed;
-    background-size: cover;
-
-    justify-content: center;
-    text-align: center;
-    padding: 20%;
-    box-sizing: border-box;
-    color: white;
-    font-size: 20px;
-}
-
 .res object{
     padding-top: 2%;
-    height: 96vh;
+    height: 95vh;
     width: 100%;
 }
 
 .navBar li a:hover{
-    color: rgb(255, 69, 69);
+    color: #de3c4b;
 }
 
+.git{
+    transition: all 0.5s;
+}
 
 .git:hover
 {
-    /* filter: drop-shadow(7px 3px 2px #555454);    */
     transform: rotateZ(360deg);
     transition: all 0.5s;
+}
+
+.pContainer ul{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:2rem;
+    margin-right: 1.5rem;
+    margin-top: 4rem;
+
+}
+
+.pContainer li{
+    background: #ffffff;
+    color: rgb(116, 116, 116);
+    list-style: none;
+    padding: 12rem;
+    border: solid  black 2px;
+    border-radius: 2rem;
+    transition: all 0.5s;
+    
+}
+
+.pContainer li h1{
+    text-align:center;  
+}
+
+.pContainer :hover{
+    border-radius: 10rem;
+    transition: all 0.5s;
+}
+
+.pContainer p{
+    opacity: 0%;
+}
+
+.pContainer :hover p {
+    opacity: 100%;
+    transition: all 0.5s;
+}
+
+
+
+.bg{
+    background: rgb(130, 151, 255);
 }

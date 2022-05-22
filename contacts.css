@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@244&display=swap');
+
+* {
+    margin: 0px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 1000;
+
+}
+
+.prettyPicture {
+    height: 100vh;
+    background: url("images/pexels-anna-tarazevich-6900713.jpg") center/cover no-repeat fixed;
+    background-size: cover;
+
+    justify-content: center;
+    text-align: center;
+    padding: 20%;
+    box-sizing: border-box;
+    color: white;
+    font-size: 20px;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px;
+
+    list-style: none;
+    position: fixed;
+}
+
+.test {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navBar li a:hover {
+    color: #ff2c2c;
+}
+
+.clinks{
+    
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+.clinks:hover {
+    color: #ff2c2c;
+}
