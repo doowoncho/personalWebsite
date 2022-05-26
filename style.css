@@ -22,7 +22,7 @@
     color: #363636;
     text-decoration: none;  
     font-size: 18px;
-
+    
 }
 
 .name{
@@ -37,7 +37,7 @@
 
 .name h1 {
     font-size: 80px;
-    color: black
+    color: black;
 }
 
 .name p{
@@ -77,8 +77,8 @@
 }
 
 .res object{
-    padding-top: 2%;
-    height: 95vh;
+    margin-top: 2rem;
+    height: 93vh;
     width: 100%;
 }
 
@@ -99,8 +99,8 @@
 .pContainer ul{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap:2rem;
-    margin-right: 1.5rem;
+    grid-gap:1rem;
+    margin-right: 2rem;
     margin-top: 4rem;
 
 }
