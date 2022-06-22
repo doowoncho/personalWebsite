@@ -139,3 +139,20 @@
 .bg{
     background: rgb(130, 151, 255);
 }
+
+.gitref{
+    color: red;
+}
+
+.gitref:hover{
+    color:rgb(182, 3, 33);
+}
+
+a{
+    color: rgb(116, 116, 116);
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
