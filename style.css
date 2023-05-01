@@ -1,163 +1,155 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@244&display=swap');
-
 *{
-    margin: 0px;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 1000;
-   
+    font-family:'Times New Roman', Times, serif;
 }
-
-.navBar{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    padding: 10px;
-   
-    background: c6d4ff;
-    list-style: none;
-    position: fixed;
-}
-
-.test{
-    color: #363636;
-    text-decoration: none;  
-    font-size: 18px;
-    
-}
-
-.name{
-    justify-content: center;
-    text-align: center;
-    height: 100vh;
-    padding: 20%;
-    box-sizing:border-box;
-    background-size: cover;
-    
-}
-
-.name h1 {
-    font-size: 80px;
-    color: black;
-}
-
-.name p{
-     font-size: 20px;
-     color: black
-   
-}
-
-.e{
-    opacity: 0%;
-    margin-right: -40px;
-    transition: all .5s;
-}
-
-.ex{
-    opacity: 0%;
-    font-size: 15px;
-    color: rgb(255, 69, 69);
-    transition: all .5s;
-}
-
-.container:hover .ex{
-    opacity: 100%;
-    transition: all 1.2s;
- }
-
-.container:hover .e {
-    opacity: 100%;
-    color: black;
-    transition: all 1.2s;
-}
-
-.container:hover .o {
-    opacity: 0%;
-    color: black;
-    transition: all 1.2s;
-}
-
-.res object{
-    margin-top: 2rem;
-    height: 93vh;
-    width: 100%;
-}
-
-.navBar li a:hover{
-    color: #de3c4b;
-}
-
-.git{
-    transition: all 0.5s;
-}
-
-.git:hover
-{
-    transform: rotateZ(360deg);
-    transition: all 0.5s;
-}
-
-.pContainer ul{
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap:1rem;
-    margin-right: 2rem;
-    margin-top: 4rem;
-
-}
-
-.pContainer li{
-    text-align: center;
-    background: #ffffff;
-    color: rgb(116, 116, 116);
-    list-style: none;
-    padding: 8rem;
-    border: solid  black 2px;
-    border-radius: 2rem;
-    transition: all 0.5s;
-    
-}
-
-.pContainer li h1{
-    text-align:center;  
-}
-
-.pContainer li h4{
-    text-align:left;  
-}
-
-.pContainer :hover{
-    border-radius: 10rem;
-    transition: all 0.5s;
-}
-
-.pContainer p{
-    opacity: 0%;
-}
-
-.pContainer :hover p {
-    opacity: 100%;
-    transition: all 0.5s;
-}
-
-
-
-.bg{
-    background: rgb(130, 151, 255);
-}
-
-.gitref{
-    color: red;
-}
-
-.gitref:hover{
-    color:rgb(182, 3, 33);
-}
-
+body {
+    background-color: rgb(20, 20, 20);
+    margin: 0px; 
+  }
+  
 a{
-    color: rgb(116, 116, 116);
+    color: white;
     text-decoration: none;
 }
 
-a:hover{
-    text-decoration: underline;
+#menu {  
+align-items: center;
+display: flex;
+height: 100vh;
+width: 100vw;
+}
+
+#menu-items {
+margin-left: clamp(4rem, 20vw, 48rem);
+position: relative;
+z-index: 2;
+}
+
+#menu[data-active-index="0"] > #menu-background-pattern {
+background-position: 0% -25%;
+}
+
+#menu[data-active-index="1"] > #menu-background-pattern {
+background-position: 0% -50%;
+}
+
+#menu[data-active-index="2"] > #menu-background-pattern {
+background-position: 0% -75%;
+}
+
+#menu[data-active-index="3"] > #menu-background-pattern {
+background-position: 0% -100%;
+}
+
+#menu[data-active-index="0"] > #menu-background-image {
+background-position: center 45%;
+}
+
+#menu[data-active-index="1"] > #menu-background-image {
+background-position: center 50%;
+}
+
+#menu[data-active-index="2"] > #menu-background-image {
+background-position: center 55%;
+}
+
+#menu[data-active-index="3"] > #menu-background-image {
+background-position: center 60%;
+}
+
+#menu-background-pattern {
+background-image: linear-gradient(
+    to bottom, 
+    rgba(255, 255, 255, 0.1) 1px, 
+    transparent 1px
+),
+linear-gradient(
+    to right, 
+    rgba(255, 255, 255, 0.1) 1px, 
+    transparent 1px
+);
+background-position: 0 0;
+background-size: 13vmin 13vmin;
+height: 100vh;
+left: 0;
+position: absolute;
+top: 0;
+transition: opacity 800ms ease, 
+    background-size 800ms ease,
+    background-position 800ms ease;
+width: 100vw;
+z-index: 1;
+}
+
+#menu-background-image {
+background-image: url("images/pexels-anna-tarazevich-6900713.jpg");
+background-position: center 40%;
+background-size: 110vmax;
+height: 100%;
+left: 0px;  
+opacity: 0.5;
+position: absolute;
+top: 0px;
+transition: opacity 800ms ease,
+    background-size 800ms ease,
+    background-position 800ms ease;
+width: 100%;
+z-index: 0;
+}
+
+#menu-items:hover ~ #menu-background-pattern {
+background-size: 11vmin 11vmin;
+opacity: 0.5;
+}
+
+#menu-items:hover ~ #menu-background-image {
+background-size: 100vmax;
+opacity: 0.1;
+}
+
+#menu-items:hover > .menu-item {
+opacity: 0.3;
+}
+
+#menu-items:hover > .menu-item:hover {
+opacity: 1; 
+}
+
+.menu-item {
+color: white;
+cursor: pointer;
+display: block;
+font-family: 'Ibarra Real Nova', serif;
+font-size: clamp(3rem, 8vw, 8rem);
+padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
+text-decoration: none;
+transition: opacity 400ms ease;
+}
+  
+.res object{
+    margin-top: 4rem;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+}
+
+.navBar {
+    position: fixed;
+    z-index: 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; 
+    width: 100%;
+    padding: 5px;
+
+    list-style: none;
+    position: fixed;
+}
+.test {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navBar li a:hover {
+    color: #ff2c2c;
 }

@@ -1,30 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@244&display=swap');
-
 * {
     margin: 0px;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 1000;
-
+    font-family:'Times New Roman', Times, serif;
 }
 
 .prettyPicture {
     height: 100vh;
-    background: url("images/pexels-anna-tarazevich-6900713.jpg") center/cover no-repeat fixed;
+    background-color: rgb(17, 20, 18);
+    /* background: url("https://images.unsplash.com/photo-1642429035322-6f7edd1df933?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80") center/cover no-repeat fixed; */
     background-size: cover;
 
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    text-align: center;
-    padding: 20%;
+    align-items: center;
+    padding: 100px;
     box-sizing: border-box;
     color: white;
     font-size: 20px;
+    z-index: 2;
 }
 
 .navBar {
+    position: fixed;
+    z-index: 3;
     display: flex;
     justify-content: space-around;
+    align-items: flex-start; 
     width: 100%;
-    padding: 10px;
+    padding: 20px;
 
     list-style: none;
     position: fixed;
@@ -40,9 +43,11 @@
     color: #ff2c2c;
 }
 
+
 .clinks{
-    
     color: white;
+    position: relative;
+    z-index: 10;
 }
 
 a{
@@ -51,4 +56,25 @@ a{
 
 .clinks:hover {
     color: #ff2c2c;
+}
+
+#menu-background-pattern {
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(255, 255, 255, 0.1) 1px, 
+        transparent 1px
+    ),
+    linear-gradient(
+        to right, 
+        rgba(255, 255, 255, 0.1) 1px, 
+        transparent 1px
+    );
+    background-position: 0 0;
+    background-size: 13vmin 13vmin;
+    height: 100vh;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    z-index: 0;
 }
